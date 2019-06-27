@@ -1,40 +1,47 @@
+<section id="application-questions" class="widget">
+  <div class="sidebar application-questions ">
+    <div class="sidebar counselor-image-wrapper">
+      <div class="sidebar counselor-image-outline">
+        <div class="sidebar counselor-image"><img alt=""
+            src="https://go.chapman.edu/www/images/CRM%20Portals/{{staff_last}}.png">
+        </div>
+      </div>
+    </div>
+    <div class="sand container">
+      <div class="sidebar title">
+        <h2>Application Questions </h2>
+      </div>
+      <div class="sidebar application-questions inner sand">
+        <div class="sidebar_application text">
+          <ul>
+            <li class="faux-h2 bold">Your Counselor: </li>
+            <li> {
+              {
+              staffname
+              }
+              }
 
-                                <div class="sidebar__application-questions">
-                                  <div class="sidebar__counselor-image-wrapper">
-                                    <div class="sidebar__counselor-image-outline">
-                                      <div class="sidebar__counselor-image"><img alt="" src="https://go.chapman.edu/www/images/CRM%20Portals/{{staff_last}}.png">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="sidebar__application-questions inner">
-                                    <div class="sidebar_application text">
-                                      <h2>Application Questions </h2>
-                                      <ul>
-                                        <li class="faux-h2 bold">Your Counselor: </li>
-                                        <li> {
-                                          {
-                                          staffname
-                                          }
-                                          }
+            </li>
+            <li class="faux-h2 bold">Email: </li>
+            <li><span class="link"> {
+                {
+                staffemail
+                }
+                }
 
-                                        </li>
-                                        <li class="faux-h2 bold">Email: </li>
-                                        <li><span class="link"> {
-                                            {
-                                            staffemail
-                                            }
-                                            }
+              </span></li>
+            <li class="faux-h2 bold">Phone: </li> 
+            <li>  
+            {
+            {
+            staffphone
+            }
+            }
+</li>
 
-                                          </span></li>
-                                        <li class="faux-h2 bold">Phone: </li> {
-                                        {
-                                        staffphone
-                                        }
-                                        }
-
-                                        
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

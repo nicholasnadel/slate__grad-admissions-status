@@ -740,39 +740,41 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
               <tr style="vertical-align: top;">
                 <td colspan="2">
                   <div class="part_rows_container">
-                   <h1 class="sr-only">Admissions Status</h1>
-<div class="part masthead__welcome" id="part_296b0c2e-977a-1a39-9de8-ab3a38468553">
-  <div class="masthead__innards">
-    <div class="faux-h1">Welcome,
-      Pete.</div>
-    <div class="row">
-      <p>Banksy PBR VHS roof party chia typewriter tofu McSweeney's next level kale chips letterpress shabby chic locavore cray chillwave heirloom keffiyeh Schlitz semiotics squid Vice fixie dreamcatcher fap lo-fi freegan Echo Park art party before they sold out pop-up four loko Kickstarter leggings post-ironic</p>
-      <div class="masthead__line">
-        <hr>
+                    <section id="masthead" role="header">
+  <h1 class="sr-only">Admissions Status</h1>
+  <div class="part masthead__welcome" id="part_296b0c2e-977a-1a39-9de8-ab3a38468553">
+    <div class="masthead__innards">
+      <div class="faux-h1">Welcome,
+        Pete.</div>
+      <div class="row">
+        <p>Banksy PBR VHS roof party chia typewriter tofu McSweeney's next level kale chips letterpress shabby chic
+          locavore cray chillwave heirloom keffiyeh Schlitz semiotics squid Vice fixie dreamcatcher fap lo-fi freegan
+          Echo Park art party before they sold out pop-up four loko Kickstarter leggings post-ironic</p>
+        <div class="masthead__line">
+          <hr>
+        </div>
+        <div class="masthead__stats">
+          <ul>
+            <li class="masthead_li"><strong>App Status:</strong></li>
+            <li class="masthead_li"><strong>Program:</strong></li>
+            <li class="masthead_li"><strong>Application Term:</strong></li>
+            <li class="masthead_li"><strong>Chapman ID Number:</strong></li>
+          </ul>
+        </div>
       </div>
-      <div class="masthead__stats">
-        <ul>
-          <li class="masthead_li"><strong>App Status:</strong></li>
-          <li class="masthead_li"><strong>Program:</strong></li>
-          <li class="masthead_li"><strong>Application Term:</strong></li>
-          <li class="masthead_li"><strong>Chapman ID Number:</strong></li>
-        </ul>
-      </div>
+      <div class="row"><button class="red">Application FAQ</button></div>
     </div>
-    <div class="row"><button class="red">Application FAQ</button></div>
   </div>
-</div>
+</section>
                   </div>
                 </td>
               </tr>
               <tr style="vertical-align: top;">
                 <td style="padding-right: 15px;">
                   <div class="part_rows_container">
-                    
-<section class="payment-due" aria-label="Remaining Payments">
-<h2 class="h2__payment-due">payment due: <span class="red inline">$464</span></h2>
+                    <section class="payment-due" aria-label="Remaining Payments">
+  <h2 class="h2__payment-due">payment due: <span class="red inline">$464</span></h2>
 </section>
-
                     <section class="procesing-notes" aria-label="Processing Notes">
   <h2>Processing Notes</h2>
   <p>However, you may forget that you do not need to make it enforceable. This License does not cure such failure in a commercial product offering, such Contributor by reason of any subsequent version of this License with every copy of the initial Agreement Steward.</p>
@@ -815,64 +817,82 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
                 <td>
                   <div class="part_rows_container">
                     <!-- SIDEBAR RIGHT -->
-                    <div class="part" id="part_8983653d-a86f-78f1-1799-508e384b3a0e">
-                      
-                                <div class="sidebar__application-questions">
-                                  <div class="sidebar__counselor-image-wrapper">
-                                    <div class="sidebar__counselor-image-outline">
-                                      <div class="sidebar__counselor-image"><img alt="" src="https://go.chapman.edu/www/images/CRM%20Portals/{{staff_last}}.png">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="sidebar__application-questions inner">
-                                    <div class="sidebar_application text">
-                                      <h2>Application Questions </h2>
-                                      <ul>
-                                        <li class="faux-h2 bold">Your Counselor: </li>
-                                        <li> {
-                                          {
-                                          staffname
-                                          }
-                                          }
+                    <section id="application-questions" class="widget">
+  <div class="sidebar application-questions ">
+    <div class="sidebar counselor-image-wrapper">
+      <div class="sidebar counselor-image-outline">
+        <div class="sidebar counselor-image"><img alt="" src="https://go.chapman.edu/www/images/CRM%20Portals/{{staff_last}}.png">
+        </div>
+      </div>
+    </div>
+    <div class="sand container">
+      <div class="sidebar title">
+        <h2>Application Questions </h2>
+      </div>
+      <div class="sidebar application-questions inner sand">
+        <div class="sidebar_application text">
+          <ul>
+            <li class="faux-h2 bold">Your Counselor: </li>
+            <li> {
+              {
+              staffname
+              }
+              }
 
-                                        </li>
-                                        <li class="faux-h2 bold">Email: </li>
-                                        <li><span class="link"> {
-                                            {
-                                            staffemail
-                                            }
-                                            }
+            </li>
+            <li class="faux-h2 bold">Email: </li>
+            <li><span class="link"> {
+                {
+                staffemail
+                }
+                }
 
-                                          </span></li>
-                                        <li class="faux-h2 bold">Phone: </li> {
-                                        {
-                                        staffphone
-                                        }
-                                        }
+              </span></li>
+            <li class="faux-h2 bold">Phone: </li> 
+            <li>  
+            {
+            {
+            staffphone
+            }
+            }
+</li>
 
-                                        
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              
-
-
-                      <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:250px;">
-                        <tbody>
-                          <tr>
-                            <td style="vertical-align: middle; text-align: center; background-color: rgb(221, 221, 221);">
-                              <img alt="" src="https://go.chapman.edu/www/images/ug/snapshots/happenings_doti_summerreads.jpg" style="width: 180px; height: 120px;"></td>
-                          </tr>
-                          <tr>
-                            <td style="vertical-align: middle; text-align: center; background-color: rgb(221, 221, 221);">
-                              <u><a href="https://www.chapman.edu/admission/graduate/visit.aspx">Learn more
-                                  about On-Campus Events Here</a></u></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <hr>
-                    </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                    <section id="counselor-contact" class=" cu_sidebar widget">
+  <div class="inner">
+    <h2>Program Questions</h2>
+    <ul>
+      <li class="bold">Name:</li>
+      <li>{{progrname}}</li>
+      <li class="bold">Email:</li>
+      <li class="link">dodgeadmit@chapman.edu</li>
+      <li class="bold">Phone:</li>
+      <li>{{progemail}}</li>
+    </ul>
+  </div>
+</section>
+                    <section id="counselor-contact" class=" cu_sidebar widget">
+  <div class="container">
+    <div class="inner">
+      <h2>View Graduate Student Cost of Attendance</h2>
+      <a href="https://www.chapman.edu/students/tuition-and-aid/financial-aid/undergraduate/cost-of-attendance/index.aspx">Cost
+        of Attendance</a>
+    </div>
+  </div>
+</section>
+                    <section id="grad-admission-events" class="cu_sidebar widget">
+  <div class="container">
+    <div class="inner">
+      <h2>View upcoming Graduate Admission events</h2>
+      <a class="link" href="">Graduate Admission Events</a>
+    </div>
+  </div>
+</section>
                     <div class="part" id="part_c2f2c428-80f1-080f-5e34-a01157818cbd">
                       <table align="center" border="0" cellpadding="1" cellspacing="1" style="height:200px;width:210px;">
                         <tbody>
