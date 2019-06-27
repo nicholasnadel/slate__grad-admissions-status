@@ -1,0 +1,257 @@
+/* Inline #15 | https://chp.test.technolutions.net/portal/nickGradNew */
+:root {
+  --primaryRed: #a50034;
+  --primaryRedHover: #C8003F;
+  --pantherBlack: #231F20;
+  --white: #FFFFFF;
+  --primarySand: #f6f2e7;
+}
+
+.faux-h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+.payment-due {
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 2%;
+  margin-bottom: 3rem;
+  font-size: 2.25rem;
+  background-color: var(--primarySand);
+  height: 6.25rem;
+}
+
+h2.h2__payment-due {
+  display: inline;
+  text-transform: capitalize;
+}
+
+.link {
+  color: var(--primaryRed);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.masthead__stats ul {
+  margin-left: 0;
+}
+
+.masthead__stats ul li {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.masthead__welcome {
+  display: grid;
+  grid-template-columns: 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: left;
+  padding-left: 10%;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 32.8125rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://images.pexels.com/photos/1708988/pexels-photo-1708988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.pexels.com/photos/1708988/pexels-photo-1708988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  margin-bottom: 3rem;
+  /* full width (override default padding */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.masthead__innards {
+  height: 25rem;
+  display: grid;
+}
+
+.masthead__innards p {
+  font-size: 1rem;
+  color: white;
+}
+
+.masthead__line hr {
+  width: 6.25rem;
+  left: 0;
+  display: inline-block;
+  width: 5rem;
+  left: 0;
+  display: inline-block;
+  height: 0.1875rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  margin-top: 1.375rem;
+}
+
+.masthead__line {
+  width: 100%;
+  display: inline-block;
+}
+
+button {
+  height: 2.8125rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.red {
+  color: var(--primaryRed);
+}
+
+.inline {
+  display: inline-block;
+}
+
+button.red {
+  background-color: var(--primaryRed);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2em;
+  width: 18.75rem;
+  height: 3.75rem;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+button.red:hover {
+  background-color: var(--primaryRedHover);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media screen and (min-width: 48rem) {
+  .c_primaryContent.cr.c_twoColumns.cr .c_middleRightContainer.cr {
+    float: right;
+    width: 100%;
+    padding-left: 0.625rem;
+    padding-top: 0.625rem;
+  }
+}
+
+.cu_container {
+  padding: 5.5rem 0 0 5.5rem;
+}
+
+/* sidebar */
+.sidebar__application-questions .inner {
+  background-color: var(--primarySand);
+  display: grid;
+  min-height: 397px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: -100px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sidebar__application-questions .inner ul,
+.sidebar__application-questions .inner li {
+  list-style: none !important;
+  margin-left: 0;
+}
+
+.sidebar__application-questions .inner li:nth-child(even) {
+  padding-bottom: 20px;
+}
+
+.sidebar__application-questions .inner .bold {
+  font-weight: 800;
+}
+
+.sidebar__application-questions h2 {
+  font-size: 1.125rem;
+  color: var(--primaryRed);
+}
+
+.sidebar__counselor-image-outline {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--primaryRed);
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sidebar__counselor-image-outline:hover {
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.sidebar__counselor-image-outline:hover > .sidebar__counselor-image img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.sidebar__counselor-image img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  display: grid;
+  align-self: center;
+  background: url(https://www.chapman.edu/about/_files/maps-and-directions/images/pete-car.jpg);
+  background-position: top center;
+  background-size: contain;
+  --x: 0px;
+  --y: 0px;
+  background-position: var(--x) var(--y);
+}
+
+.sidebar__counselor-image-wrapper {
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sidebar__application-questions .text {
+  padding-top: 30px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* DEVELOPMENT ONLY (REMOVE OR COMMENT OUT) */
+.masthead_li strong::after {
+  content: " some data";
+  font-weight: normal;
+}
