@@ -268,12 +268,7 @@ section.sidebar {
     border-radius: 50%;
     display: grid;
     align-self: center;
-    background: url(https://www.chapman.edu/about/_files/maps-and-directions/images/pete-car.jpg);
-    background-position: top center;
-    background-size: contain;
-    --x: 0px;
-    --y: 0px;
-    background-position: var(--x) var(--y);
+    @extend %peter;
   }
 
   .counselor-image-wrapper {
