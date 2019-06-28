@@ -1,0 +1,117 @@
+@import 'variables.scss', 'slate-overrides.scss';
+
+#application-checklist {
+  $breakpoint-alpha: 768px;
+
+
+
+  .rwd-table {
+    margin: 1em 0;
+    min-width: 100%;
+
+    tr {
+      // border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    th {
+      display: none; // for accessibility
+      text-transform: uppercase;
+    }
+
+    td {
+      display: block;
+
+      &:first-child {
+        padding-top: .5em;
+      }
+
+      &:last-child {
+        padding-bottom: .5em;
+      }
+
+      &:before {
+        content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+        font-weight: bold;
+
+
+        // optional stuff to make it look nicer
+        width: 6.5em; // magic number :( adjust according to your own content
+        display: inline-block;
+        // end options
+
+        @media (min-width: $breakpoint-alpha) {
+          display: none;
+        }
+      }
+    }
+
+    th,
+    td {
+      text-align: left;
+
+      @media (min-width: $breakpoint-alpha) {
+
+        display: table-cell;
+        padding: .25em .5em;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+    }
+
+
+  }
+
+
+  // presentational styling
+
+
+  .rwd-table {
+    border-radius: .4em;
+    overflow: hidden;
+
+    tr {
+      border-color: lighten(#34495E, 10%);
+    }
+
+    th,
+    td {
+      margin: .5em 1em;
+
+      @media (min-width: $breakpoint-alpha) {
+        padding: 1em !important;
+      }
+    }
+
+    th,
+    td:before {
+      color: black;
+      background-color: var(--primarySand);
+    }
+  }
+
+  .status {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    .received {
+      color: #108a13;
+    }
+
+    .required {
+      color: #a50034;
+    }
+
+    .optional {
+      color: #777777;
+    }
+  }
+}

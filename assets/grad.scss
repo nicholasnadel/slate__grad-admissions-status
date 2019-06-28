@@ -1,5 +1,5 @@
 // changes are watched via index.js
-@import 'variables', 'slate-overrides';
+@import 'variables.scss', 'slate-overrides.scss';
 
 .faux-h1 {
   font-size: 1.875rem;
@@ -72,10 +72,9 @@ section#masthead {
   -ms-flex-line-pack: center;
   align-content: center;
   height: 32.8125rem;
-  
+
   @extend %hawaii;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: white;
@@ -88,6 +87,7 @@ section#masthead {
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
 .masthead__innards {
   height: 25rem;
   display: grid;
@@ -385,18 +385,13 @@ section.sidebar {
       margin-bottom: 10px;
     }
   }
-
 }
 
+.main-widget {
+  margin-bottom: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
+  & h2,
+  p {
+    padding-left: 20px;
+  }
+}
