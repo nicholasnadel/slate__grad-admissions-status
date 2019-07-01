@@ -1,9 +1,8 @@
 @import 'variables.scss', 'slate-overrides.scss';
 
-#application-checklist {
-  $breakpoint-alpha: 768px;
-
-
+#application-checklist,
+.cu_table {
+  $breakpoint-alpha: 1024px;
 
   .rwd-table {
     margin: 1em 0;
@@ -12,6 +11,10 @@
     tr {
       // border-top: 1px solid black;
       border-bottom: 1px solid black;
+
+      &:first-child {
+        border: none;
+      }
     }
 
     th {
@@ -31,14 +34,10 @@
       }
 
       &:before {
-        content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+        content: attr(data-th)": ";
         font-weight: bold;
-
-
-        // optional stuff to make it look nicer
-        width: 6.5em; // magic number :( adjust according to your own content
+        width: 6.5em;
         display: inline-block;
-        // end options
 
         @media (min-width: $breakpoint-alpha) {
           display: none;
@@ -51,6 +50,10 @@
       text-align: left;
 
       @media (min-width: $breakpoint-alpha) {
+
+        h2 {
+          padding-left: unset;
+        }
 
         display: table-cell;
         padding: .25em .5em;
@@ -73,12 +76,12 @@
   // presentational styling
 
 
+
   .rwd-table {
-    border-radius: .4em;
     overflow: hidden;
 
     tr {
-      border-color: lighten(#34495E, 10%);
+      border-color: var(--tableGray);
     }
 
     th,
@@ -93,7 +96,7 @@
     th,
     td:before {
       color: black;
-      background-color: var(--primarySand);
+      // background-color: var(--primarySand);
     }
   }
 
@@ -114,4 +117,18 @@
       color: #777777;
     }
   }
+
+  @media (max-width: $breakpoint-alpha) {
+    .rwd-table {
+      margin: 0 !important;
+    }
+  }
+}
+
+.square {
+  border-radius: 0;
+}
+
+.no-border-bottom {
+  border-bottom: none;
 }

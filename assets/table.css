@@ -5,6 +5,7 @@
   --white: #FFFFFF;
   --primarySand: #f6f2e7;
   --defaultFont: Arial, Helvetica Neue, Helvetica, sans-serif;
+  --tableGray: rgb(183, 183, 183);
 }
 
 .c_subRotator.cr {
@@ -63,7 +64,7 @@
   display: inline-block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #application-checklist .rwd-table td:before {
     display: none;
   }
@@ -74,11 +75,15 @@
   text-align: left;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #application-checklist .rwd-table th,
   #application-checklist .rwd-table td {
     display: table-cell;
     padding: .25em .5em;
+  }
+  #application-checklist .rwd-table th h2,
+  #application-checklist .rwd-table td h2 {
+    padding-left: unset;
   }
   #application-checklist .rwd-table th:first-child,
   #application-checklist .rwd-table td:first-child {
@@ -91,12 +96,11 @@
 }
 
 #application-checklist .rwd-table {
-  border-radius: .4em;
   overflow: hidden;
 }
 
 #application-checklist .rwd-table tr {
-  border-color: #46637f;
+  border-color: var(--tableGray);
 }
 
 #application-checklist .rwd-table th,
@@ -104,7 +108,7 @@
   margin: .5em 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #application-checklist .rwd-table th,
   #application-checklist .rwd-table td {
     padding: 1em !important;
@@ -114,7 +118,6 @@
 #application-checklist .rwd-table th,
 #application-checklist .rwd-table td:before {
   color: black;
-  background-color: var(--primarySand);
 }
 
 #application-checklist .status {
@@ -133,4 +136,14 @@
 
 #application-checklist .status .optional {
   color: #777777;
+}
+
+@media (max-width: 1024px) {
+  #application-checklist .rwd-table {
+    margin: 0 !important;
+  }
+}
+
+.square {
+  border-radius: 0;
 }

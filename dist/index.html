@@ -775,7 +775,7 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
                     <section class="payment-due" aria-label="Remaining Payments">
   <h2 class="h2__payment-due">payment due: <span class="red inline">$464</span></h2>
 </section>
-                    <section id="processing-notes" aria-label="Processing Notes" class="main-widget">
+                    <section id="processing-notes" aria-label="Processing Notes" class="main-section-widget">
   <h2>Processing Notes</h2>
   <p>However, you may forget that you do not need to make it enforceable. This License does not cure such failure in a
     commercial product offering, such Contributor by reason of any subsequent version of this License with every copy of
@@ -785,18 +785,13 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
     the initial Agreement Steward.</p>
 
 </section>
-                    <div class="part" id="part_104b1fb9-44e4-026c-9614-fe69f493922a"></div>
-                    <div class="part" id="part_7a39a048-16ee-5855-ca37-8c11443dc944"></div>
-                    <div class="part" id="part_39e6de70-bace-05ee-7206-30b5c2b4e31e"></div>
-                    <div class="part" id="part_0b7c5005-1f01-171c-2455-3ef3a821cf7c"></div>
-                    <section id="application-checklist" class="main-widget">
+                    <section id="application-checklist" class="main-section-widget">
   <h2>Application Checklist</h2>
-  <table class="rwd-table">
-    <tr>
+  <table class="rwd-table ">
+    <tr class="sand">
       <th>Status</th>
       <th>Details</th>
       <th>Dates</th>
-
     </tr>
     <tr>
       <td data-th="Status" class="status">Received</td>
@@ -805,7 +800,8 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
     </tr>
     <tr>
       <td data-th="Status" class="status">Required</td>
-      <td data-th="Details">"Creative Portfolio List"</td>
+      <td data-th="Details">Recommendation from Ben Holcomb, Pepperdine University (Seaver College) Submitted on
+        10/01/2018</td>
       <td data-th="Dates">11/23/2018</td>
     </tr>
     <tr>
@@ -820,42 +816,56 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
     </tr>
   </table>
 </section>
-
-
-
-
-<!-- <section id="application-checklist">
-  <table border="1" cellpadding="1" cellspacing="1">
-    <tbody>
-      <tr>
-        <td>type</td>
-        <td>type</td>
-        <td></td>
-        <td>&#xA0;</td>
-        <td>&#xA0;</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>&#xA0;</td>
-        <td>&#xA0;</td>
-      </tr>
-      <tr>
-        <td>&#xA0;</td>
-        <td>&#xA0;</td>
-        <td>&#xA0;</td>
-        <td>&#xA0;</td>
-        <td>&#xA0;</td>
-      </tr>
-    </tbody>
+                    <section id="test-scores" class="main-section-widget cu_table">
+  <h2>Test Scores</h2>
+  <table class="rwd-table ">
+    <tr class="sand no-border-bottom">
+      <th>Dates</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td data-th="Details">{{test_3}}</td>
+      <td data-th="Dates">{{date}}</td>
+    </tr>
   </table>
-</section> --></div>
+</section>
+                    <section id="application-checklist" class="main-section-widget">
+  <h2>Application Checklist</h2>
+  <table class="rwd-table ">
+    <tr class="sand">
+      <th>Dates</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td data-th="Details">Statement of Intent</td>
+      <td data-th="Dates">11/23/2018</td>
+    </tr>
+    <tr>
+      <td data-th="Details">Recommendation from Ben Holcomb, Pepperdine University (Seaver College) Submitted on
+        10/01/2018</td>
+      <td data-th="Dates">11/23/2018</td>
+    </tr>
+    <tr>
+      <td data-th="Details">Resume or Curriculum Vitae</td>
+      <td data-th="Dates">11/17/2018</td>
+    </tr>
+    <tr>
+      <td data-th="Details">The Test of Life</td>
+      <td data-th="Dates">11/17/2019</td>
+    </tr>
+  </table>
+</section>
+                    <div class="part" id="part_104b1fb9-44e4-026c-9614-fe69f493922a"></div>
+                    <div class="part" id="part_7a39a048-16ee-5855-ca37-8c11443dc944"></div>
+                    <div class="part" id="part_39e6de70-bace-05ee-7206-30b5c2b4e31e"></div>
+                    <div class="part" id="part_0b7c5005-1f01-171c-2455-3ef3a821cf7c"></div>
+
+                  </div>
                 </td>
                 <td>
                   <div class="part_rows_container">
                     <!-- SIDEBAR RIGHT -->
-                    <section id="application-questions" class="widget">
+                    <section id="application-questions" class="widget cu_widget">
   <div class="sidebar application-questions ">
     <div class="sidebar counselor-image-wrapper">
       <div class="sidebar counselor-image-outline">
@@ -867,8 +877,8 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
       <div class="sidebar title">
         <h2>Application Questions </h2>
       </div>
-      <div class="sidebar application-questions inner sand">
-        <div class="sidebar_application text">
+      <div class="sidebar application-questions sand">
+        <div class="sidebar_application text inner">
           <ul>
             <li class="faux-h2 bold">Your Counselor: </li>
             <li> {{staffname}}</li>
@@ -877,12 +887,12 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
             <li class="faux-h2 bold">Phone: </li>
             <li>{{staffphone}}</li>
           </ul>
-        </div>
       </div>
     </div>
   </div>
+</div>
 </section>
-                    <section id="counselor-contact" class=" cu_sidebar widget">
+                    <section id="counselor-contact" class=" cu_widget widget">
   <div class="inner">
     <h2>Program Questions</h2>
     <ul>
@@ -895,14 +905,14 @@ if (window['FW'] == null) document.getElementById('netblock').style['display'] =
     </ul>
   </div>
 </section>
-                    <section id="attendance-cost" class=" cu_sidebar widget">
+                    <section id="attendance-cost" class=" cu_widget widget">
   <div class="inner">
     <h2>View Graduate Student Cost of Attendance</h2>
     <a href="https://www.chapman.edu/students/tuition-and-aid/financial-aid/undergraduate/cost-of-attendance/index.aspx">Cost
       of Attendance</a>
   </div>
 </section>
-                    <section id="grad-admission-events" class="cu_sidebar widget">
+                    <section id="grad-admission-events" class="cu_widget widget">
   <div class="container">
     <div class="inner">
       <h2>View upcoming Graduate Admission events</h2>

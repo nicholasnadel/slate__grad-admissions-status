@@ -1,9 +1,9 @@
 // changes are watched via index.js
-@import 'variables.scss', 'slate-overrides.scss';
+@import "variables.scss", "slate-overrides.scss";
 
 .faux-h1 {
   font-size: 1.875rem;
-  font-weight: 600
+  font-weight: 600;
 }
 
 h1,
@@ -17,7 +17,6 @@ p {
   margin: unset;
   padding: unset;
 }
-
 
 h2 {
   font-size: 1.625rem;
@@ -46,7 +45,7 @@ h2.h2__payment-due {
   @include font;
 }
 
-.cu_sidebar a,
+.cu_widget a,
 .link {
   @include link;
   text-decoration: underline;
@@ -59,7 +58,7 @@ h2.h2__payment-due {
 
 .masthead__stats ul li {
   list-style: none;
-  margin-top: 0.75rem
+  margin-top: 0.75rem;
 }
 
 section#masthead {
@@ -138,13 +137,13 @@ button.red {
   font-size: 1.2em;
   width: 18.75rem;
   height: 3.75rem;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, .5);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 button.red:hover {
   background-color: var(--primaryRedHover);
-  @include ease(.3s);
+  @include ease(0.3s);
 }
 
 @media screen and (min-width: 48rem) {
@@ -249,15 +248,15 @@ section.sidebar {
   }
 
   .counselor-image-outline:hover {
-    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, .5);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, .5);
-    @include ease(.1s);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    @include ease(0.1s);
   }
 
   .counselor-image-outline:hover>.counselor-image img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    @include ease(.1s);
+    @include ease(0.1s);
   }
 
   .counselor-image img {
@@ -336,7 +335,7 @@ section.sidebar {
 }
 
 // test
-.cu_sidebar {
+.cu_widget {
   background-color: var(--primarySand);
   padding: 10% 0 10% 0;
   display: grid;
@@ -352,8 +351,7 @@ section.sidebar {
   list-style: none;
 }
 
-
-.cu_sidebar {
+.cu_widget {
   h2 {
     font-size: 1.125rem;
     color: var(--primaryRed);
@@ -387,11 +385,37 @@ section.sidebar {
   }
 }
 
-.main-widget {
+.main-section-widget {
+  margin-top: 30px;
   margin-bottom: 20px;
+  background-color: white;
 
   & h2,
   p {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: $iphoneX) {
+  #application-questions {
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+
+    & .inner {
+      border: 2px dotted black;
+    }
+  }
+
+  .c_primaryContent.cr {
+    min-width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cu_widget .inner {
+    padding-left: unset;
+    background-color: green;
   }
 }
