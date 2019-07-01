@@ -24,7 +24,7 @@ h2 {
 }
 
 .widget {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .payment-due {
@@ -137,8 +137,8 @@ button.red {
   font-size: 1.2em;
   width: 18.75rem;
   height: 3.75rem;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
 }
 
 button.red:hover {
@@ -163,57 +163,11 @@ button.red:hover {
   background-color: var(--primarySand);
 }
 
-/* sidebar */
-// .sidebar> {
-//   .inner {
-//     display: grid;
-//     // -webkit-box-pack: center;
-//     //     -ms-flex-pack: center;
-//     //         justify-content: center;
-//   }
-
-//   .text {
-//     min-width: 200px;
-//     padding-bottom: 30px;
-//     // margin-left: -50px;
-//   }
-
-//   h2 {
-//     font-size: 1.125rem;
-//     color: var(--primaryRed);
-//   }
-
-//   .title {
-
-//     // background-color: var(--primarySand);
-//     // padding-top: 110px;
-//     // margin-top: -100px;
-//     // display: grid;
-//     // -webkit-box-pack: center;
-//     // -ms-flex-pack: center;
-//     // justify-content: center;
-//   }
-
-//   ul,
-//   li {
-//     list-style: none !important;
-//     margin-left: 0;
-//   }
-
-//   li:nth-child(even) {
-//     padding-bottom: 20px;
-//   }
-
-//   .bold {
-//     @include fw(800);
-//   }
-// }
-
 #processing-notes {
-  line-height: 24px;
+  line-height: 1.5rem;
 
   >h2 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -232,12 +186,12 @@ section.sidebar {
   }
 
   .counselor-image-outline {
-    width: 220px;
-    height: 220px;
+    width: 13.75rem;
+    height: 13.75rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    border: 2px solid var(--primaryRed);
+    border: 0.125rem solid var(--primaryRed);
     display: grid;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -248,8 +202,8 @@ section.sidebar {
   }
 
   .counselor-image-outline:hover {
-    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
     @include ease(0.1s);
   }
 
@@ -260,8 +214,8 @@ section.sidebar {
   }
 
   .counselor-image img {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -283,7 +237,7 @@ section.sidebar {
   }
 
   li:nth-child(even) {
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
 
   .bold {
@@ -294,30 +248,21 @@ section.sidebar {
 #application-questions {
   .title h2 {
     background-color: var(--primarySand);
-    padding-top: 110px;
-    margin-top: -100px;
+    padding-top: 6.875rem;
+    margin-top: -6.25rem;
     display: grid;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-
-  .container {
-    // min-width: 320px;
-  }
-
-  ul,
-  li {
-    // margin-left: 10px;
-  }
 }
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
@@ -327,11 +272,6 @@ section.sidebar {
 .masthead_li strong::after {
   content: " some data";
   font-weight: normal;
-}
-
-.sidebar_application.text {
-  // width: 190px;
-  // border: 2px solid black;
 }
 
 // test
@@ -371,41 +311,38 @@ section.sidebar {
   }
 
   li:nth-child(even) {
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
 
   .inner {
-    max-width: 225px;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 14.0625rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 
     & h2 {
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
   }
 }
 
 .main-section-widget {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
   background-color: white;
 
   & h2,
   p {
-    padding-left: 20px;
+    padding-left: 1.25rem;
   }
 }
 
 @media (max-width: $iphoneX) {
-  #application-questions {
+
+  #application-questions,
+  .main-section-widget {
     max-width: 100vw;
     padding: 0;
-    margin: 0;
-    border: 2px solid black;
 
-    & .inner {
-      border: 2px dotted black;
-    }
   }
 
   .c_primaryContent.cr {
@@ -416,6 +353,6 @@ section.sidebar {
 
   .cu_widget .inner {
     padding-left: unset;
-    background-color: green;
+    width: 100vw;
   }
 }
