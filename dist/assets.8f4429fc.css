@@ -31,18 +31,16 @@ section#masthead {
   background-position: var(--x) var(--y);
 }
 
-.c_primaryContent.c_clearfix.c_twoColumns.cr {
-  background-color: transparent;
+.c_admission .cr .c_primaryContent.c_clearfix.c_twoColumns.cr {
+  background-color: white;
 }
-
-#content,
-.c_middleRightContainer.cr {
+.c_admission .cr #content,
+.c_admission .cr .c_middleRightContainer.cr {
   padding: unset;
   padding-top: unset;
   padding-left: unset;
 }
-
-.c_primaryContent.cr {
+.c_admission .cr .c_primaryContent.cr {
   max-width: 85%;
 }
 
@@ -69,7 +67,7 @@ h2 {
 }
 
 .widget {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .payment-due {
@@ -180,8 +178,8 @@ button.red {
   font-size: 1.2em;
   width: 18.75rem;
   height: 3.75rem;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
 }
 
 button.red:hover {
@@ -206,12 +204,11 @@ button.red:hover {
   background-color: var(--primarySand);
 }
 
-/* sidebar */
 #processing-notes {
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 #processing-notes > h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 section.sidebar {
@@ -226,12 +223,12 @@ section.sidebar {
   color: var(--primaryRed);
 }
 .sidebar .counselor-image-outline {
-  width: 220px;
-  height: 220px;
+  width: 13.75rem;
+  height: 13.75rem;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid var(--primaryRed);
+  border: 0.125rem solid var(--primaryRed);
   display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -241,8 +238,8 @@ section.sidebar {
   justify-content: center;
 }
 .sidebar .counselor-image-outline:hover {
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.1s ease;
   transition: 0.1s ease;
 }
@@ -253,8 +250,8 @@ section.sidebar {
   transition: 0.1s ease;
 }
 .sidebar .counselor-image img {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -272,7 +269,7 @@ section.sidebar {
   list-style: none !important;
 }
 .sidebar li:nth-child(even) {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .sidebar .bold {
   font-weight: 800;
@@ -280,19 +277,20 @@ section.sidebar {
 
 #application-questions .title h2 {
   background-color: var(--primarySand);
-  padding-top: 110px;
-  margin-top: -100px;
+  padding-top: 6.875rem;
+  margin-top: -6.25rem;
   display: grid;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
@@ -335,36 +333,32 @@ section.sidebar {
   font-weight: 800;
 }
 .cu_widget li:nth-child(even) {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .cu_widget .inner {
-  max-width: 225px;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 14.0625rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 .cu_widget .inner h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .main-section-widget {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
   background-color: white;
 }
 .main-section-widget h2,
 .main-section-widget p {
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 @media (max-width: 376px) {
-  #application-questions {
+  #application-questions,
+.main-section-widget {
     max-width: 100vw;
     padding: 0;
-    margin: 0;
-    border: 2px solid black;
-  }
-  #application-questions .inner {
-    border: 2px dotted black;
   }
 
   .c_primaryContent.cr {
@@ -375,21 +369,19 @@ section.sidebar {
 
   .cu_widget .inner {
     padding-left: unset;
-    background-color: green;
+    width: 100vw;
   }
 }
-.c_primaryContent.c_clearfix.c_twoColumns.cr {
-  background-color: transparent;
+.c_admission .cr .c_primaryContent.c_clearfix.c_twoColumns.cr {
+  background-color: white;
 }
-
-#content,
-.c_middleRightContainer.cr {
+.c_admission .cr #content,
+.c_admission .cr .c_middleRightContainer.cr {
   padding: unset;
   padding-top: unset;
   padding-left: unset;
 }
-
-.c_primaryContent.cr {
+.c_admission .cr .c_primaryContent.cr {
   max-width: 85%;
 }
 :root {
@@ -429,155 +421,152 @@ section.sidebar {
   background-color: white;
 }
 
-.c_primaryContent.c_clearfix.c_twoColumns.cr {
-  background-color: transparent;
+.c_admission .cr .c_primaryContent.c_clearfix.c_twoColumns.cr {
+  background-color: white;
 }
-
-#content,
-.c_middleRightContainer.cr {
+.c_admission .cr #content,
+.c_admission .cr .c_middleRightContainer.cr {
   padding: unset;
   padding-top: unset;
   padding-left: unset;
 }
-
-.c_primaryContent.cr {
+.c_admission .cr .c_primaryContent.cr {
   max-width: 85%;
 }
 
-#application-checklist .rwd-table,
-.cu_table .rwd-table {
+.c_admission .cr #application-checklist .rwd-table,
+.c_admission .cr .cu_table .rwd-table {
   margin: 1em 0;
   min-width: 100%;
 }
-#application-checklist .rwd-table tr,
-.cu_table .rwd-table tr {
-  border-bottom: 1px solid black;
+.c_admission .cr #application-checklist .rwd-table tr,
+.c_admission .cr .cu_table .rwd-table tr {
+  border-bottom: 0.0625rem solid black;
 }
-#application-checklist .rwd-table tr:first-child,
-.cu_table .rwd-table tr:first-child {
+.c_admission .cr #application-checklist .rwd-table tr:first-child,
+.c_admission .cr .cu_table .rwd-table tr:first-child {
   border: none;
+  height: 3.125rem;
 }
-#application-checklist .rwd-table th,
-.cu_table .rwd-table th {
+.c_admission .cr #application-checklist .rwd-table th,
+.c_admission .cr .cu_table .rwd-table th {
   display: none;
   text-transform: uppercase;
 }
-#application-checklist .rwd-table td,
-.cu_table .rwd-table td {
+.c_admission .cr #application-checklist .rwd-table td,
+.c_admission .cr .cu_table .rwd-table td {
   display: block;
 }
-#application-checklist .rwd-table td:first-child,
-.cu_table .rwd-table td:first-child {
+.c_admission .cr #application-checklist .rwd-table td:first-child,
+.c_admission .cr .cu_table .rwd-table td:first-child {
   padding-top: 0.5em;
 }
-#application-checklist .rwd-table td:last-child,
-.cu_table .rwd-table td:last-child {
+.c_admission .cr #application-checklist .rwd-table td:last-child,
+.c_admission .cr .cu_table .rwd-table td:last-child {
   padding-bottom: 0.5em;
 }
-#application-checklist .rwd-table td:before,
-.cu_table .rwd-table td:before {
+.c_admission .cr #application-checklist .rwd-table td:before,
+.c_admission .cr .cu_table .rwd-table td:before {
   content: attr(data-th) ": ";
   font-weight: bold;
   width: 6.5em;
   display: inline-block;
 }
-@media (min-width: 1024px) {
-  #application-checklist .rwd-table td:before,
-.cu_table .rwd-table td:before {
+@media (min-width: 64rem) {
+  .c_admission .cr #application-checklist .rwd-table td:before,
+.c_admission .cr .cu_table .rwd-table td:before {
     display: none;
   }
 }
-#application-checklist .rwd-table th,
-#application-checklist .rwd-table td,
-.cu_table .rwd-table th,
-.cu_table .rwd-table td {
+.c_admission .cr #application-checklist .rwd-table th,
+.c_admission .cr #application-checklist .rwd-table td,
+.c_admission .cr .cu_table .rwd-table th,
+.c_admission .cr .cu_table .rwd-table td {
   text-align: left;
 }
-@media (min-width: 1024px) {
-  #application-checklist .rwd-table th,
-#application-checklist .rwd-table td,
-.cu_table .rwd-table th,
-.cu_table .rwd-table td {
+@media (min-width: 64rem) {
+  .c_admission .cr #application-checklist .rwd-table th,
+.c_admission .cr #application-checklist .rwd-table td,
+.c_admission .cr .cu_table .rwd-table th,
+.c_admission .cr .cu_table .rwd-table td {
     display: table-cell;
     padding: 0.25em 0.5em;
   }
-  #application-checklist .rwd-table th h2,
-#application-checklist .rwd-table td h2,
-.cu_table .rwd-table th h2,
-.cu_table .rwd-table td h2 {
+  .c_admission .cr #application-checklist .rwd-table th h2,
+.c_admission .cr #application-checklist .rwd-table td h2,
+.c_admission .cr .cu_table .rwd-table th h2,
+.c_admission .cr .cu_table .rwd-table td h2 {
     padding-left: unset;
   }
-  #application-checklist .rwd-table th:first-child,
-#application-checklist .rwd-table td:first-child,
-.cu_table .rwd-table th:first-child,
-.cu_table .rwd-table td:first-child {
+  .c_admission .cr #application-checklist .rwd-table th:first-child,
+.c_admission .cr #application-checklist .rwd-table td:first-child,
+.c_admission .cr .cu_table .rwd-table th:first-child,
+.c_admission .cr .cu_table .rwd-table td:first-child {
     padding-left: 0;
   }
-  #application-checklist .rwd-table th:last-child,
-#application-checklist .rwd-table td:last-child,
-.cu_table .rwd-table th:last-child,
-.cu_table .rwd-table td:last-child {
+  .c_admission .cr #application-checklist .rwd-table th:last-child,
+.c_admission .cr #application-checklist .rwd-table td:last-child,
+.c_admission .cr .cu_table .rwd-table th:last-child,
+.c_admission .cr .cu_table .rwd-table td:last-child {
     padding-right: 0;
   }
 }
-#application-checklist .rwd-table,
-.cu_table .rwd-table {
+.c_admission .cr #application-checklist .rwd-table,
+.c_admission .cr .cu_table .rwd-table {
   overflow: hidden;
 }
-#application-checklist .rwd-table tr,
-.cu_table .rwd-table tr {
+.c_admission .cr #application-checklist .rwd-table tr,
+.c_admission .cr .cu_table .rwd-table tr {
   border-color: var(--tableGray);
 }
-#application-checklist .rwd-table th,
-#application-checklist .rwd-table td,
-.cu_table .rwd-table th,
-.cu_table .rwd-table td {
+.c_admission .cr #application-checklist .rwd-table th,
+.c_admission .cr #application-checklist .rwd-table td,
+.c_admission .cr .cu_table .rwd-table th,
+.c_admission .cr .cu_table .rwd-table td {
   margin: 0.5em 1em;
 }
-@media (min-width: 1024px) {
-  #application-checklist .rwd-table th,
-#application-checklist .rwd-table td,
-.cu_table .rwd-table th,
-.cu_table .rwd-table td {
+@media (min-width: 64rem) {
+  .c_admission .cr #application-checklist .rwd-table th,
+.c_admission .cr #application-checklist .rwd-table td,
+.c_admission .cr .cu_table .rwd-table th,
+.c_admission .cr .cu_table .rwd-table td {
     padding: 1em !important;
   }
 }
-#application-checklist .rwd-table th,
-#application-checklist .rwd-table td:before,
-.cu_table .rwd-table th,
-.cu_table .rwd-table td:before {
+.c_admission .cr #application-checklist .rwd-table th,
+.c_admission .cr #application-checklist .rwd-table td:before,
+.c_admission .cr .cu_table .rwd-table th,
+.c_admission .cr .cu_table .rwd-table td:before {
   color: black;
 }
-#application-checklist .status,
-.cu_table .status {
-  font-size: 18px;
+.c_admission .cr #application-checklist .status,
+.c_admission .cr .cu_table .status {
+  font-size: 1.125rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-#application-checklist .status .received,
-.cu_table .status .received {
+.c_admission .cr #application-checklist .status .received,
+.c_admission .cr .cu_table .status .received {
   color: #108a13;
 }
-#application-checklist .status .required,
-.cu_table .status .required {
+.c_admission .cr #application-checklist .status .required,
+.c_admission .cr .cu_table .status .required {
   color: #a50034;
 }
-#application-checklist .status .optional,
-.cu_table .status .optional {
+.c_admission .cr #application-checklist .status .optional,
+.c_admission .cr .cu_table .status .optional {
   color: #777777;
 }
-@media (max-width: 1024px) {
-  #application-checklist .rwd-table,
-.cu_table .rwd-table {
+@media (max-width: 64rem) {
+  .c_admission .cr #application-checklist .rwd-table,
+.c_admission .cr .cu_table .rwd-table {
     margin: 0 !important;
   }
 }
-
-.square {
+.c_admission .cr .square {
   border-radius: 0;
 }
-
-.no-border-bottom {
+.c_admission .cr .no-border-bottom {
   border-bottom: none;
 }
 

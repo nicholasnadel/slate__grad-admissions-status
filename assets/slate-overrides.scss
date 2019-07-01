@@ -1,14 +1,16 @@
-.c_primaryContent.c_clearfix.c_twoColumns.cr {
-  background-color: transparent;
-}
+.c_admission .cr {
+  .c_primaryContent.c_clearfix.c_twoColumns.cr {
+    background-color: white;
+  }
 
-#content,
-.c_middleRightContainer.cr {
-  padding: unset;
-  padding-top: unset;
-  padding-left: unset;
-}
+  #content,
+  .c_middleRightContainer.cr {
+    padding: unset;
+    padding-top: unset;
+    padding-left: unset;
+  }
 
-.c_primaryContent.cr {
-  max-width: 85%;
+  .c_primaryContent.cr {
+    max-width: 85%;
+  }
 }

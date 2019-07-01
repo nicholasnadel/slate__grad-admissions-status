@@ -1,134 +1,138 @@
 @import 'variables.scss', 'slate-overrides.scss';
 
-#application-checklist,
-.cu_table {
-  $breakpoint-alpha: 1024px;
+.c_admission .cr {
 
-  .rwd-table {
-    margin: 1em 0;
-    min-width: 100%;
+  #application-checklist,
+  .cu_table {
+    $breakpoint-alpha: 64rem;
 
-    tr {
-      // border-top: 1px solid black;
-      border-bottom: 1px solid black;
+    .rwd-table {
+      margin: 1em 0;
+      min-width: 100%;
 
-      &:first-child {
-        border: none;
-      }
-    }
-
-    th {
-      display: none; // for accessibility
-      text-transform: uppercase;
-    }
-
-    td {
-      display: block;
-
-      &:first-child {
-        padding-top: .5em;
-      }
-
-      &:last-child {
-        padding-bottom: .5em;
-      }
-
-      &:before {
-        content: attr(data-th)": ";
-        font-weight: bold;
-        width: 6.5em;
-        display: inline-block;
-
-        @media (min-width: $breakpoint-alpha) {
-          display: none;
-        }
-      }
-    }
-
-    th,
-    td {
-      text-align: left;
-
-      @media (min-width: $breakpoint-alpha) {
-
-        h2 {
-          padding-left: unset;
-        }
-
-        display: table-cell;
-        padding: .25em .5em;
+      tr {
+        // border-top: 0.0625rem solid black;
+        border-bottom: 0.0625rem solid black;
 
         &:first-child {
-          padding-left: 0;
+          border: none;
+          height: 3.125rem;
+        }
+      }
+
+      th {
+        display: none; // for accessibility
+        text-transform: uppercase;
+      }
+
+      td {
+        display: block;
+
+        &:first-child {
+          padding-top: .5em;
         }
 
         &:last-child {
-          padding-right: 0;
+          padding-bottom: .5em;
+        }
+
+        &:before {
+          content: attr(data-th)": ";
+          font-weight: bold;
+          width: 6.5em;
+          display: inline-block;
+
+          @media (min-width: $breakpoint-alpha) {
+            display: none;
+          }
         }
       }
 
+      th,
+      td {
+        text-align: left;
+
+        @media (min-width: $breakpoint-alpha) {
+
+          h2 {
+            padding-left: unset;
+          }
+
+          display: table-cell;
+          padding: .25em .5em;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+
+      }
+
+
     }
 
 
-  }
-
-
-  // presentational styling
+    // presentational styling
 
 
 
-  .rwd-table {
-    overflow: hidden;
+    .rwd-table {
+      overflow: hidden;
 
-    tr {
-      border-color: var(--tableGray);
-    }
+      tr {
+        border-color: var(--tableGray);
+      }
 
-    th,
-    td {
-      margin: .5em 1em;
+      th,
+      td {
+        margin: .5em 1em;
 
-      @media (min-width: $breakpoint-alpha) {
-        padding: 1em !important;
+        @media (min-width: $breakpoint-alpha) {
+          padding: 1em !important;
+        }
+      }
+
+      th,
+      td:before {
+        color: black;
+        // background-color: var(--primarySand);
       }
     }
 
-    th,
-    td:before {
-      color: black;
-      // background-color: var(--primarySand);
+    .status {
+      font-size: 1.125rem;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      .received {
+        color: #108a13;
+      }
+
+      .required {
+        color: #a50034;
+      }
+
+      .optional {
+        color: #777777;
+      }
+    }
+
+    @media (max-width: $breakpoint-alpha) {
+      .rwd-table {
+        margin: 0 !important;
+      }
     }
   }
 
-  .status {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    .received {
-      color: #108a13;
-    }
-
-    .required {
-      color: #a50034;
-    }
-
-    .optional {
-      color: #777777;
-    }
+  .square {
+    border-radius: 0;
   }
 
-  @media (max-width: $breakpoint-alpha) {
-    .rwd-table {
-      margin: 0 !important;
-    }
+  .no-border-bottom {
+    border-bottom: none;
   }
-}
-
-.square {
-  border-radius: 0;
-}
-
-.no-border-bottom {
-  border-bottom: none;
 }
