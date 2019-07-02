@@ -1,5 +1,7 @@
 // changes are watched via index.js
-@import "variables.scss", "slate-overrides.scss";
+// @import "variables.scss", "slate-overrides.scss";
+
+
 
 .faux-h1 {
   font-size: 30px;
@@ -71,7 +73,6 @@ section#masthead {
   -ms-flex-line-pack: center;
   align-content: center;
   height: 525px;
-
   @extend %hawaii;
   background-repeat: no-repeat;
   background-position: center;
