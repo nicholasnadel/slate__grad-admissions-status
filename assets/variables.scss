@@ -7,7 +7,19 @@
   --defaultFont: Arial, Helvetica Neue, Helvetica, sans-serif;
   --tableGray: rgb(183, 183, 183);
 }
-$iphoneX: 376px;
+
+$primaryRed: #a50034;
+$primaryRedHover: #C8003F;
+$pantherBlack: #231F20;
+$white: #FFFFFF;
+$primarySand: #f6f2e7;
+$sandPrimary: $primarySand;
+$defaultFont: Arial,
+Helvetica Neue,
+Helvetica,
+sans-serif;
+$tableGray: rgb(183, 183, 183);
+$mobile: 769px;
 
 @mixin ease($prop) {
   -webkit-transition: $prop ease;

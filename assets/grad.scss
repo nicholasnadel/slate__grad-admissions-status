@@ -146,13 +146,14 @@ button.red:hover {
   @include ease(0.3s);
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .c_primaryContent.cr.c_twoColumns.cr .c_middleRightContainer.cr {
     float: right;
     width: 100%;
     padding-left: 0.625rem;
     padding-top: 0.625rem;
   }
+
 }
 
 .cu_container {
@@ -336,13 +337,12 @@ section.sidebar {
   }
 }
 
-@media (max-width: $iphoneX) {
+@media (max-width: $mobile) {
 
   #application-questions,
   .main-section-widget {
     max-width: 100vw;
     padding: 0;
-
   }
 
   .c_primaryContent.cr {
@@ -355,4 +355,43 @@ section.sidebar {
     padding-left: unset;
     width: 100vw;
   }
+}
+
+// application questions mobile
+@media screen and (max-width: 688px) {
+  .sidebar.application-questions {
+
+    & .sand.inner {
+      max-width: 14.0625rem;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      max-width: 100%;
+      display: grid;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    & .text {
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      min-width: 240px;
+    }
+
+    /* base.css | http://fw.cdn.technolutions.net/framework/base.css?v=20190522-6 */
+
+    ol,
+    ul {
+      margin-left: unset;
+
+    }
+
+    .bottom {
+      margin-bottom: 0.625rem;
+    }
+  }
+}
+
+tr:nth-child(even) {
+  background-color: lighten(blue, 80%) !important;
 }

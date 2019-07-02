@@ -4,7 +4,7 @@
 
   #application-checklist,
   .cu_table {
-    $breakpoint-alpha: 64rem;
+    $breakpoint-alpha: 1024px;
 
     .rwd-table {
       margin: 1em 0;
@@ -53,7 +53,6 @@
         text-align: left;
 
         @media (min-width: $breakpoint-alpha) {
-
           h2 {
             padding-left: unset;
           }
@@ -93,7 +92,10 @@
 
         @media (min-width: $breakpoint-alpha) {
           padding: 1em !important;
+
         }
+
+
       }
 
       th,
@@ -124,6 +126,10 @@
     @media (max-width: $breakpoint-alpha) {
       .rwd-table {
         margin: 0 !important;
+      }
+
+      .rwd-table tr:first-child {
+        height: 0;
       }
     }
   }

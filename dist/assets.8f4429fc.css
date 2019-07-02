@@ -43,6 +43,9 @@ section#masthead {
 .c_admission .cr .c_primaryContent.cr {
   max-width: 85%;
 }
+.c_admission .cr .c_middleRightContainer .cr {
+  padding-top: 0;
+}
 
 .faux-h1 {
   font-size: 1.875rem;
@@ -188,7 +191,7 @@ button.red:hover {
   transition: 0.3s ease;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .c_primaryContent.cr.c_twoColumns.cr .c_middleRightContainer.cr {
     float: right;
     width: 100%;
@@ -354,7 +357,7 @@ section.sidebar {
   padding-left: 1.25rem;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 769px) {
   #application-questions,
 .main-section-widget {
     max-width: 100vw;
@@ -372,6 +375,36 @@ section.sidebar {
     width: 100vw;
   }
 }
+@media screen and (max-width: 688px) {
+  .sidebar.application-questions {
+    /* base.css | http://fw.cdn.technolutions.net/framework/base.css?v=20190522-6 */
+  }
+  .sidebar.application-questions .sand.inner {
+    max-width: 14.0625rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    max-width: 100%;
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .sidebar.application-questions .text {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    min-width: 240px;
+  }
+  .sidebar.application-questions ol,
+.sidebar.application-questions ul {
+    margin-left: unset;
+  }
+  .sidebar.application-questions .bottom {
+    margin-bottom: 0.625rem;
+  }
+}
+tr:nth-child(even) {
+  background-color: white !important;
+}
 .c_admission .cr .c_primaryContent.c_clearfix.c_twoColumns.cr {
   background-color: white;
 }
@@ -383,6 +416,9 @@ section.sidebar {
 }
 .c_admission .cr .c_primaryContent.cr {
   max-width: 85%;
+}
+.c_admission .cr .c_middleRightContainer .cr {
+  padding-top: 0;
 }
 :root {
   --primaryRed: #a50034;
@@ -432,6 +468,9 @@ section.sidebar {
 }
 .c_admission .cr .c_primaryContent.cr {
   max-width: 85%;
+}
+.c_admission .cr .c_middleRightContainer .cr {
+  padding-top: 0;
 }
 
 .c_admission .cr #application-checklist .rwd-table,
@@ -472,7 +511,7 @@ section.sidebar {
   width: 6.5em;
   display: inline-block;
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   .c_admission .cr #application-checklist .rwd-table td:before,
 .c_admission .cr .cu_table .rwd-table td:before {
     display: none;
@@ -484,7 +523,7 @@ section.sidebar {
 .c_admission .cr .cu_table .rwd-table td {
   text-align: left;
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   .c_admission .cr #application-checklist .rwd-table th,
 .c_admission .cr #application-checklist .rwd-table td,
 .c_admission .cr .cu_table .rwd-table th,
@@ -525,7 +564,7 @@ section.sidebar {
 .c_admission .cr .cu_table .rwd-table td {
   margin: 0.5em 1em;
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   .c_admission .cr #application-checklist .rwd-table th,
 .c_admission .cr #application-checklist .rwd-table td,
 .c_admission .cr .cu_table .rwd-table th,
@@ -557,10 +596,14 @@ section.sidebar {
 .c_admission .cr .cu_table .status .optional {
   color: #777777;
 }
-@media (max-width: 64rem) {
+@media (max-width: 1024px) {
   .c_admission .cr #application-checklist .rwd-table,
 .c_admission .cr .cu_table .rwd-table {
     margin: 0 !important;
+  }
+  .c_admission .cr #application-checklist .rwd-table tr:first-child,
+.c_admission .cr .cu_table .rwd-table tr:first-child {
+    height: 0;
   }
 }
 .c_admission .cr .square {
