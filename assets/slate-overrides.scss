@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .c_admission .cr {
   .c_primaryContent.c_clearfix.c_twoColumns.cr {
     background-color: white;
@@ -12,6 +14,7 @@
 
   .c_primaryContent.cr {
     max-width: 85%;
+
   }
 
   .c_middleRightContainer .cr {

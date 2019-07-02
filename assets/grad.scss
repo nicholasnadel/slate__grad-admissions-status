@@ -2,7 +2,7 @@
 @import "variables.scss", "slate-overrides.scss";
 
 .faux-h1 {
-  font-size: 1.875rem;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -19,12 +19,12 @@ p {
 }
 
 h2 {
-  font-size: 1.625rem;
+  font-size: 26px;
   @include font;
 }
 
 .widget {
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .payment-due {
@@ -33,10 +33,10 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   padding-left: 2%;
-  margin-bottom: 3rem;
-  font-size: 2.25rem;
+  margin-bottom: 48px;
+  font-size: 36px;
   background-color: var(--primarySand);
-  height: 6.25rem;
+  height: 100px;
 }
 
 h2.h2__payment-due {
@@ -58,7 +58,7 @@ h2.h2__payment-due {
 
 .masthead__stats ul li {
   list-style: none;
-  margin-top: 0.75rem;
+  margin-top: 12px;
 }
 
 section#masthead {
@@ -70,44 +70,44 @@ section#masthead {
   padding-left: 10%;
   -ms-flex-line-pack: center;
   align-content: center;
-  height: 32.8125rem;
+  height: 525px;
 
   @extend %hawaii;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
   /* full width (override default padding */
-  width: 100vw;
+  width: 101vw;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
+  margin-left: -51vw;
   margin-right: -50vw;
 }
 
 .masthead__innards {
-  height: 25rem;
+  height: 400px;
   display: grid;
 
   & p {
-    font-size: 1rem;
+    font-size: 16px;
     color: white;
   }
 }
 
 .masthead__line hr {
-  width: 6.25rem;
+  width: 100px;
   left: 0;
   display: inline-block;
-  width: 5rem;
+  width: 80px;
   left: 0;
   display: inline-block;
-  height: 0.1875rem;
+  height: 3px;
   background-color: white;
-  border-radius: 0.25rem;
-  margin-top: 1.375rem;
+  border-radius: 4px;
+  margin-top: 22px;
 }
 
 .masthead__line {
@@ -116,8 +116,8 @@ section#masthead {
 }
 
 button {
-  height: 2.8125rem;
-  border-radius: 0.5rem;
+  height: 45px;
+  border-radius: 8px;
   border: none;
 }
 
@@ -135,10 +135,10 @@ button.red {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.2em;
-  width: 18.75rem;
-  height: 3.75rem;
-  -webkit-box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 60px;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 button.red:hover {
@@ -150,14 +150,14 @@ button.red:hover {
   .c_primaryContent.cr.c_twoColumns.cr .c_middleRightContainer.cr {
     float: right;
     width: 100%;
-    padding-left: 0.625rem;
-    padding-top: 0.625rem;
+    padding-left: 10px;
+    padding-top: 10px;
   }
 
 }
 
 .cu_container {
-  padding: 5.5rem 0 0 5.5rem;
+  padding: 88px 0 0 88px;
 }
 
 .sand {
@@ -165,10 +165,10 @@ button.red:hover {
 }
 
 #processing-notes {
-  line-height: 1.5rem;
+  line-height: 24px;
 
   >h2 {
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
   }
 }
 
@@ -182,17 +182,17 @@ section.sidebar {
   }
 
   h2 {
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--primaryRed);
   }
 
   .counselor-image-outline {
-    width: 13.75rem;
-    height: 13.75rem;
+    width: 220px;
+    height: 220px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    border: 0.125rem solid var(--primaryRed);
+    border: 2px solid var(--primaryRed);
     display: grid;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -203,8 +203,8 @@ section.sidebar {
   }
 
   .counselor-image-outline:hover {
-    -webkit-box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
-    box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
     @include ease(0.1s);
   }
 
@@ -215,8 +215,8 @@ section.sidebar {
   }
 
   .counselor-image img {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 200px;
+    height: 200px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -238,7 +238,7 @@ section.sidebar {
   }
 
   li:nth-child(even) {
-    padding-bottom: 1.25rem;
+    padding-bottom: 20px;
   }
 
   .bold {
@@ -249,8 +249,8 @@ section.sidebar {
 #application-questions {
   .title h2 {
     background-color: var(--primarySand);
-    padding-top: 6.875rem;
-    margin-top: -6.25rem;
+    padding-top: 110px;
+    margin-top: -100px;
     display: grid;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -260,10 +260,10 @@ section.sidebar {
 
 .sr-only {
   position: absolute;
-  width: 0.0625rem;
-  height: 0.0625rem;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  margin: -0.0625rem;
+  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
@@ -294,7 +294,7 @@ section.sidebar {
 
 .cu_widget {
   h2 {
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--primaryRed);
   }
 
@@ -312,28 +312,29 @@ section.sidebar {
   }
 
   li:nth-child(even) {
-    padding-bottom: 1.25rem;
+    padding-bottom: 20px;
   }
 
   .inner {
-    max-width: 14.0625rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    max-width: 225px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     & h2 {
-      margin-bottom: 0.625rem;
+      margin-bottom: 10px;
     }
   }
 }
 
 .main-section-widget {
-  margin-top: 1.875rem;
-  margin-bottom: 1.25rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
   background-color: white;
 
   & h2,
   p {
-    padding-left: 1.25rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -345,6 +346,37 @@ section.sidebar {
     padding: 0;
   }
 
+  #application-questions {
+    .mobile-wrapper {
+      display: grid;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: $primarySand;
+      padding-top: 100px;
+      margin-top: -100px;
+
+      & .container,
+      .inner {
+        max-width: 220px
+      }
+
+      & .title h2 {
+        -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+        justify-content: unset;
+      }
+    }
+  }
+
+
+
+
+
+
   .c_primaryContent.cr {
     min-width: 100vw;
     padding: 0;
@@ -355,16 +387,51 @@ section.sidebar {
     padding-left: unset;
     width: 100vw;
   }
+
+  .main-section-widget {
+    border-radius: 2px;
+    margin: 16px;
+  }
+
+  .main-section-widget,
+  .widget,
+  #application-questions,
+  .payment-due {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+
+  .main-section-widget:hover,
+  .widget:hover,
+  #application-questions:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .cu_widget,
+  .payment-due,
+  #application-questions,
+  #processing-notes {
+    margin: 0 20px 20px 20px;
+  }
+
+  #processing-notes,
+  .main-section-widget {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
 }
 
 // application questions mobile
-@media screen and (max-width: 688px) {
+@media screen and (max-width: $mobile) {
   .sidebar.application-questions {
 
     & .sand.inner {
-      max-width: 14.0625rem;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
+      max-width: 225px;
+      padding-left: 10px;
+      padding-right: 10px;
       max-width: 100%;
       display: grid;
       -webkit-box-pack: center;
@@ -373,8 +440,8 @@ section.sidebar {
     }
 
     & .text {
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
+      padding-left: 10px;
+      padding-right: 10px;
       min-width: 240px;
     }
 
@@ -387,11 +454,23 @@ section.sidebar {
     }
 
     .bottom {
-      margin-bottom: 0.625rem;
+      margin-bottom: 10px;
     }
   }
-}
 
-tr:nth-child(even) {
-  background-color: lighten(blue, 80%) !important;
+  #application-checklist,
+  .main-section-widget {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .cu_widget {
+    li {
+      padding: 0;
+      margin-left: 0;
+    }
+  }
 }

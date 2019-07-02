@@ -2,17 +2,16 @@
 
 .c_admission .cr {
 
+  $breakpoint-alpha: 1024px;
+
   #application-checklist,
   .cu_table {
-    $breakpoint-alpha: 1024px;
-
     .rwd-table {
       margin: 1em 0;
       min-width: 100%;
 
       tr {
-        // border-top: 0.0625rem solid black;
-        border-bottom: 0.0625rem solid black;
+        border-bottom: 0.0625rem solid $tableGray;
 
         &:first-child {
           border: none;
@@ -74,16 +73,11 @@
 
     }
 
-
-    // presentational styling
-
-
-
     .rwd-table {
       overflow: hidden;
 
       tr {
-        border-color: var(--tableGray);
+        border-color: $tableGray;
       }
 
       th,
@@ -100,7 +94,7 @@
 
       th,
       td:before {
-        color: black;
+        color: $black;
         // background-color: var(--primarySand);
       }
     }
@@ -133,6 +127,14 @@
       }
     }
   }
+
+  @media (max-width: $breakpoint-alpha) {
+
+    tr:last-of-type {
+      border: none !important;
+    }
+  }
+
 
   .square {
     border-radius: 0;
