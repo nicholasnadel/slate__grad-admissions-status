@@ -31,4 +31,9 @@
   .c_middleRightContainer .cr {
     padding-top: 0;
   }
+
+  div#global {
+    // removes the $user logout link above the masthead. This link has been added to a /navsNoJs conditional in Cascade's omni_nav_v2.vtl (where this Omninav is generated).
+    display: none;
+  }
 }

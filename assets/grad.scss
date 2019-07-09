@@ -72,9 +72,7 @@ section#masthead {
   align-content: center;
   height: 525px;
   @extend %hawaii;
-  background-repeat: no-repeat !important;
   background-position: center;
-  background-size: cover;
   color: white;
   margin-bottom: 48px;
   /* full width (override default padding */
@@ -84,6 +82,8 @@ section#masthead {
   right: 50%;
   margin-left: -51vw;
   margin-right: -50vw;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .masthead__innards {
@@ -339,7 +339,6 @@ section.sidebar {
 @media (max-width: $mobile) {
   section#masthead {
     min-height: 500px;
-    background-size: cover;
   }
 
   #application-questions,
