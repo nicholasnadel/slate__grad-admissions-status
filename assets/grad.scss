@@ -1,8 +1,6 @@
 // changes are watched via index.js
 // @import "variables.scss", "slate-overrides.scss";
 
-
-
 .faux-h1 {
   font-size: 30px;
   font-weight: 600;
@@ -74,7 +72,7 @@ section#masthead {
   align-content: center;
   height: 525px;
   @extend %hawaii;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-position: center;
   background-size: cover;
   color: white;
@@ -154,7 +152,6 @@ button.red:hover {
     padding-left: 10px;
     padding-top: 10px;
   }
-
 }
 
 .cu_container {
@@ -363,10 +360,11 @@ section.sidebar {
       background-color: $primarySand;
       padding-top: 100px;
       margin-top: -100px;
+      border: 1px solid $borderGray;
 
       & .container,
       .inner {
-        max-width: 220px
+        max-width: 220px;
       }
 
       & .title h2 {
@@ -376,11 +374,6 @@ section.sidebar {
       }
     }
   }
-
-
-
-
-
 
   .c_primaryContent.cr {
     min-width: 100vw;
@@ -400,17 +393,8 @@ section.sidebar {
 
   .main-section-widget,
   .widget,
-  #application-questions,
   .payment-due {
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-
-  .main-section-widget:hover,
-  .widget:hover,
-  #application-questions:hover {
-    // -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border: 1px solid $borderGray;
   }
 
   .cu_widget,
@@ -430,7 +414,6 @@ section.sidebar {
 // application questions mobile
 @media screen and (max-width: $mobile) {
   .sidebar.application-questions {
-
     & .sand.inner {
       max-width: 225px;
       padding-left: 10px;
@@ -453,7 +436,6 @@ section.sidebar {
     ol,
     ul {
       margin-left: unset;
-
     }
 
     .bottom {
