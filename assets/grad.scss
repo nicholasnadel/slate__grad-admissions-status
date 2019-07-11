@@ -165,7 +165,7 @@ button.red:hover {
 #processing-notes {
   line-height: 24px;
 
-  >h2 {
+  > h2 {
     margin-bottom: 10px;
   }
 }
@@ -206,7 +206,7 @@ section.sidebar {
     @include ease(0.1s);
   }
 
-  .counselor-image-outline:hover>.counselor-image img {
+  .counselor-image-outline:hover > .counselor-image img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     @include ease(0.1s);
@@ -422,6 +422,7 @@ section.sidebar {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      margin-bottom: 60px;
     }
 
     & .text {
