@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/12.1.0/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js start
+  /usr/local/Cellar/node/12.1.0/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js build
 
 PATH: 
   /usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.1/bin:/Users/nnadel/.npm-packages/bin:/usr/local/opt/elasticsearch@2.4/bin:/Users/nnadel/.rbenv/shims:/Users/nnadel/.rbenv/bin:/Users/nnadel/.rbenv/shims:/Users/nnadel/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/nnadel/.rbenv/bin:/usr/local/mysql/bin:~/.pub-cache/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/nnadel/workspace/slate__grad-admissions-status/package.json: Unexpected string in JSON at position 163
+  SyntaxError: /Users/nnadel/workspace/slate__grad-admissions-status/package.json: Unexpected token : in JSON at position 240
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -28,8 +28,10 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "start": "parcel index.html"
-    }
+      "start": "parcel index.html",
+      "build": "parcel build index.html --public-url ./",
+      "prebuild": "prebuild": "rm -rf dist"
+    },
     "devDependencies": {
       "parcel-bundler": "^1.12.3",
       "posthtml-include": "^1.2.0",
