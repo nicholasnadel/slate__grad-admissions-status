@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "posthtml-include": "^1.2.0",
     "sass": "^1.22.0"
-  }
+  },
+  "dependencies": {
+    "build": "^0.1.4"
+  },
+  "repository": "https://github.com/nicholasnadel/slate__grad-admissions-status.git",
+  "author": "Nicholas Nadel <nicholasnadel@gmail.com>"
 }
