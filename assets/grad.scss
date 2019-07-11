@@ -145,6 +145,10 @@ button.red:hover {
   @include ease(0.3s);
 }
 
+.sidebar.application-questions {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .c_primaryContent.cr.c_twoColumns.cr .c_middleRightContainer.cr {
     float: right;
@@ -422,7 +426,6 @@ section.sidebar {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 60px;
     }
 
     & .text {
